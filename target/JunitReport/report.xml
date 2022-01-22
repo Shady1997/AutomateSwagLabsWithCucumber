@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="33.014">
-    <testcase classname="Feature to select all products in inventory page" name="check all products in page" time="0.801">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="29.48">
+    <testcase classname="Feature to select all products in inventory page" name="check all products in page" time="0.448">
         <failure message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html" type="java.lang.IllegalStateException">
             <![CDATA[Given user choose all products in inventory page............................failed
 When click backet image.....................................................skipped
@@ -16,23 +16,23 @@ java.lang.IllegalStateException: The path to the driver executable The path to t
 	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:46)
 	at StepDefinitions.InventorySteps.user_choose_all_products_in_inventory_page(InventorySteps.java:24)
-	at ✽.user choose all products in inventory page(file:///C:/Users/Administrator/eclipse-workspace/CucumberJavaProject/src/test/resources/Features/Inventory.feature:7)
+	at ✽.user choose all products in inventory page(file:///C:/projects/CucumberJavaProject/src/test/resources/Features/Inventory.feature:7)
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Feature to test login functionality to swag labs web application" name="Check if login is successfully with valid Credientials" time="30.936">
-        <failure message="expected:&lt;[[[ChromeDriver: chrome on WINDOWS (92077a77bacf6d97b6c4e0bfbf6808d7)] -&gt; xpath: //span[@class='title']]]&gt; but was:&lt;[PRODUCTS]&gt;" type="junit.framework.ComparisonFailure">
+    <testcase classname="Feature to test login functionality to swag labs web application" name="Check if login is successfully with valid Credientials" time="28.521">
+        <failure message="expected:&lt;[[[ChromeDriver: chrome on WINDOWS (51ed4c58820e7d5c2418785fc3e51347)] -&gt; xpath: //span[@class='title']]]&gt; but was:&lt;[PRODUCTS]&gt;" type="junit.framework.ComparisonFailure">
             <![CDATA[Given user is in login page.................................................passed
 When user add valid username and password...................................passed
 And click login button......................................................passed
 Then user navigate to home page.............................................failed
 
 StackTrace:
-junit.framework.ComparisonFailure: expected:<[[[ChromeDriver: chrome on WINDOWS (92077a77bacf6d97b6c4e0bfbf6808d7)] -> xpath: //span[@class='title']]]]]><![CDATA[> but was:<[PRODUCTS]>
+junit.framework.ComparisonFailure: expected:<[[[ChromeDriver: chrome on WINDOWS (51ed4c58820e7d5c2418785fc3e51347)] -> xpath: //span[@class='title']]]]]><![CDATA[> but was:<[PRODUCTS]>
 	at junit.framework.Assert.assertEquals(Assert.java:100)
 	at junit.framework.Assert.assertEquals(Assert.java:107)
 	at StepDefinitions.LoginSteps.user_navigate_to_home_page(LoginSteps.java:61)
-	at ✽.user navigate to home page(file:///C:/Users/Administrator/eclipse-workspace/CucumberJavaProject/src/test/resources/Features/Login.feature:10)
+	at ✽.user navigate to home page(file:///C:/projects/CucumberJavaProject/src/test/resources/Features/Login.feature:10)
 ]]>
         </failure>
     </testcase>
